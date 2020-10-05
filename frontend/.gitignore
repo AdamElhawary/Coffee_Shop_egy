@@ -12,22 +12,22 @@ log.txt
 .vscode/
 npm-debug.log*
 
-.idea/
-.ionic/
-.sourcemaps/
-.sass-cache/
-.tmp/
-.versions/
-coverage/
-www/
-node_modules/
-tmp/
-temp/
-platforms/
-plugins/
+.idea/*
+.ionic/*
+.sourcemaps/*
+.sass-cache/*
+.tmp/*
+.versions/*
+coverage/*
+www/*
+node_modules/*
+tmp/*
+temp/*
+platforms/*
+plugins/*
 plugins/android.json
 plugins/ios.json
-$RECYCLE.BIN/
+$RECYCLE.BIN/*
 
 .DS_Store
 Thumbs.db
