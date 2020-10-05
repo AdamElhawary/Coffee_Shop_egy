@@ -3,9 +3,11 @@ from flask import Flask, request, jsonify, abort
 from sqlalchemy import exc
 import json
 from flask_cors import CORS
-
+from waitress import serve
 from .database.models import db_drop_and_create_all, setup_db, Drink
 from .auth.auth import AuthError, requires_auth
+
+serve(wsgiapp, listen='*:8080')
 
 app = Flask(__name__)
 setup_db(app)
@@ -17,6 +19,8 @@ def after_request(response):
     header['Access-Control-Allow-Headers'] = 'Authorization, Content-Type, true'
     header['Access-Control-Allow-Methods'] = 'POST,GET,PUT,DELETE,PATCH,OPTIONS'
     return response
+
+
 '''
 @TODO uncomment the following line to initialize the datbase
 !! NOTE THIS WILL DROP ALL RECORDS AND START YOUR DB FROM SCRATCH
