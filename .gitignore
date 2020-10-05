@@ -2,7 +2,7 @@ env/*
 .vscode/*
 __pycache__/*
 test.db
-
+backend/src/__pycache__/*
 # OS generated files #
 ######################
 .DS_Store
