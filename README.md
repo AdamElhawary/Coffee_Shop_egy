@@ -1,35 +1,41 @@
 # Coffee Shop Full Stack
 
-## Full Stack Nano - IAM Final Project
+# Originally this was a project of the Full stack nano degree offered by udacity. It's a simple Coffee shop single web app using ionic/angular as the frontend framework, Flask and sqlight, sqlalchemy, postgresql as the backend.
 
-Udacity has decided to open a new digitally enabled cafe for students to order drinks, socialize, and study hard. But they need help setting up their menu experience.
+# Udacity : https://udacity.com/. 
 
-You have been called on to demonstrate your newly learned skills to create a full stack drink menu application. The application must:
+The application can:
 
 1) Display graphics representing the ratios of ingredients in each drink.
 2) Allow public users to view drink names and graphics.
 3) Allow the shop baristas to see the recipe information.
 4) Allow the shop managers to create new drinks and edit existing drinks.
 
-## Tasks
-
-There are `@TODO` comments throughout the project. We recommend tackling the sections in order. Start by reading the READMEs in:
+# To start the app "Required dependancies", Kindly refer back to both README files mentioned below.
 
 1. [`./backend/`](./backend/README.md)
 2. [`./frontend/`](./frontend/README.md)
 
-## About the Stack
+# Api Info ;) 
 
-We started the full stack application for you. It is desiged with some key functional areas:
+Based on: REST principles! each endpoint returns a JSON metadata.
+Base Uri: "Your_local_Host:Port/". 
+ex: http://localhost:5000 "Server
+ex: http://localhost:8100 "ionic" 
 
-### Backend
+## Allowed HTTP methods "For now":-
+GET:	Retrieves resources
+Post:	Creates resources
+Patch:	Updates resources
+DELETE:	Deletes resources
 
-The `./backend` directory contains a partially completed Flask server with a pre-written SQLAlchemy module to simplify your data needs. You will need to complete the required endpoints, configure, and integrate Auth0 for authentication.
+### EndPoints:-
 
-[View the README.md within ./backend for more details.](./backend/README.md)
+GET '/drinks' "Public"
+GET '/drinks-detail' "Requires AUTH"
+POST '/drink' "Requires AUTH"
+PATCH '/drink/id' Note: id has to be an int, "Requires AUTH"
+DELETE '/drink/id' Note: id has to be an int, "Requires AUTH"
 
-### Frontend
-
-The `./frontend` directory contains a complete Ionic frontend to consume the data from the Flask server. You will only need to update the environment variables found within (./frontend/src/environment/environment.ts) to reflect the Auth0 configuration details set up for the backend app. 
-
-[View the README.md within ./frontend for more details.](./frontend/README.md)
+### I'll continue to work on this project to add more featuers later on.
+### IF you need any assistance Kindly Email : MohamedElhawary@yahoo.com.
