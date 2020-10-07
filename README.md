@@ -1,8 +1,8 @@
 # Coffee Shop Full Stack
 
-# Originally this was a project of the Full stack nano degree offered by udacity. It's a simple Coffee shop single web app using ionic/angular as the frontend framework, Flask and sqlight, sqlalchemy, postgresql as the backend.
+ Originally this was a project of the Full stack nano degree offered by udacity. It's a simple Coffee shop single web app using ionic/angular as the frontend framework, Flask and sqlight, sqlalchemy, postgresql as the backend.
 
-# Udacity : https://udacity.com/. 
+### Udacity : https://udacity.com/. 
 
 The application can:
 
@@ -38,4 +38,3 @@ PATCH '/drink/id' Note: id has to be an int, "Requires AUTH"
 DELETE '/drink/id' Note: id has to be an int, "Requires AUTH"
 
 ### I'll continue to work on this project to add more featuers later on.
-### IF you need any assistance Kindly Email : MohamedElhawary@yahoo.com.
